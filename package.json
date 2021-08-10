@@ -1,0 +1,23 @@
+{
+  "name": "-",
+  "version": "1.0.0",
+  "description": "智慧社区\r 使用Hbuilder打包",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/love-ham/-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/love-ham/-/issues"
+  },
+  "homepage": "https://github.com/love-ham/-#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vant-weapp": "^0.5.29"
+  }
+}
