@@ -39,7 +39,7 @@
 				<view class="title-text">
 					小区公告
 				</view>
-				<view class="title-icon">
+				<view class="title-icon" >
 					<image src="../../static/image/index/right@2x.png" mode=""></image>
 				</view>
 			</view>
@@ -69,12 +69,14 @@
 						url: '../../page/equipmentInspection/equipmentInspection/equipmentRepairService'
 					},
 					{
-						text: '文字2',
+						text: '民意反馈',
 						img: "../../static/image/index/wxdb@2x.png",
+						url: "../../page/publicFeedback/publicFeedback/publicFeedback"
 					},
 					{
-						text: '文字3',
+						text: '就业信息',
 						img: "../../static/image/index/wxdb@2x.png",
+						url: "../../page/employmentInformation/employmentInformation/employmentInformation"
 					},
 					{
 						text: '文字4',
@@ -133,7 +135,9 @@
 				uni.navigateTo({
 				    url: url
 				});
-			}
+			},
+			
+			
 		}
 	}
 </script>

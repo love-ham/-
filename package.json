@@ -1,23 +1,13 @@
 {
-  "name": "-",
-  "version": "1.0.0",
-  "description": "智慧社区\r 使用Hbuilder打包",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/love-ham/-.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/love-ham/-/issues"
-  },
-  "homepage": "https://github.com/love-ham/-#readme",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "vant-weapp": "^0.5.29"
-  }
+    "id": "lauwen-select",
+    "name": "下拉选择框（单选）",
+    "version": "v0.0.2",
+    "description": "lauwen-select下拉选择组件，实现h5的select效果",
+    "keywords": [
+        "select",
+        "下拉框",
+        "下拉选择框",
+        "单选组件",
+        "单选下拉框"
+    ]
 }

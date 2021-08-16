@@ -18,6 +18,21 @@
 		<view class="baoxiu-msg">
 			<view class="msg">报修信息</view>
 			<van-cell title="报修类型" value="设备"/>
+			<view class="question-type">
+				
+				
+				<view class="question-cell">问题类型</view>
+				<view  class="question-type-select">
+					<lauwen-select 
+					:options="options" 
+					:defaultIndex="'one'" 
+					:height="45" 
+					:padding="15" 
+					:fontSize="'1rem'" 
+					@getValue="getValue">
+					</lauwen-select>
+				</view>	
+			</view>
 			<van-field
 				label="报修人"
 				:value="repairman"
@@ -46,9 +61,9 @@
 			<view class="msg"> 拍照 </view>
 			<view class="photograph-content" >
 				<view  @click="photograph">
-					<image class="img" src="../static/paizhao.png" mode=""></image>
+					<!-- <image class="img" src="../static/paizhao.png" mode=""></image> -->
+					<van-icon name="photograph" />
 				</view>
-				<!-- <van-icon name="photograph" /> -->
 			</view>
 		</view>
 		<view class="submit">
@@ -58,19 +73,32 @@
 </template>
 
 <script>
+	import lauwenSelect from "@/components/lauwen-select/lauwenSelect.vue"
 	export default {
+		components: {
+			lauwenSelect,
+		},
 		data() {
 			return {
 				location: '',  // 设备位置
 				repairman: '', //报修人
 				tel: '',  // 手机号
 				remarks: '', // 报修内容 
+				options: {
+				    'one': "one",
+				    'two': "two",
+				    'three': "three",
+				}
 			}
 		},
 		onLoad() {
 	
 		},
 		methods: {
+			getValue(index) {
+				console.log(index)
+			},
+			// 拍照配置
 			photograph() {
 				uni.chooseImage({
 				  	count: 1,
@@ -124,7 +152,8 @@
 </script>
 
 <style lang="less">
-	.content {
+	.content { 
+		
 		width: 100%;
 		background-color: #F8F8F8;
 		.equipment-msg {
@@ -134,6 +163,7 @@
 				color: #999999;
 				font-size: 12px;
 			}
+			
 		}
 		.baoxiu-msg {
 			width: 100%;
@@ -141,6 +171,28 @@
 				padding: 30rpx;
 				color: #999999;
 				font-size: 12px;
+			}
+			.question-type {
+				height: 35px;
+				line-height: 35px;
+				background-color: #ffffff;
+				.question-cell {
+					position: absolute;
+					font-size: 13px;
+					margin-left: 40rpx;
+				}
+				
+				
+				.question-type-select {
+					width: 84px;
+					position: absolute;
+					right: 0px;
+					border: none;
+					z-index: 999999;
+					.lauwen-select-input.data-v-34fe01fd {
+						border: none;
+					}
+				}
 			}
 			.remarks {
 				height: 168px;

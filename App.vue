@@ -15,4 +15,9 @@
 <style>
 	/*每个页面公共css */
 	@import "./wxcomponents/vant/dist/common/index.wxss";
+	.van-cell__title, .van-cell__value {
+		white-space: nowrap !important;
+		text-overflow: ellipsis !important;
+		overflow: hidden !important;
+	}
 </style>
