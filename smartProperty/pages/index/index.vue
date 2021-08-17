@@ -6,7 +6,7 @@
 				<swiper-item>
 					<block use-slot v-for="(item, index) in categoryList" :key="index">
 						<view class="category-info">
-							<navigator @tap="handleTap(item.url)">
+							<navigator :url="item.url" @tap="handleTap(item.url)">
 								<image :src="item.src" class="category-image"></image>
 								<view class="category-text">{{item.name}}</view>
 							</navigator>
@@ -14,7 +14,7 @@
 					</block>
 				</swiper-item>
 			</swiper>
-			
+
 		</scroll-view>
 	</view>
 </template>
@@ -23,16 +23,15 @@
 	export default {
 		data() {
 			return {
-				categoryList: [
-					{
-						"src":"../../static/index/index_repair.png",
-						"name":"维修工单",
-						"url":"../../pages/repair/repair"
+				categoryList: [{
+						"src": "../../static/index/index_repair.png",
+						"name": "维修工单",
+						"url": "/pages/repair/repair"
 					},
 					{
-						"src":"../../static/index/index_inspection.png",
-						"name":"巡检打卡",
-						"url":"../../pages/inspection/inspection"
+						"src": "../../static/index/index_inspection.png",
+						"name": "巡检打卡",
+						"url": "/pages/inspection/inspection"
 					}
 				],
 			}
@@ -42,9 +41,9 @@
 
 		},
 		methods: {
-			handleTap(_urlInfo){
+			handleTap(_urlInfo) {
 				uni.navigateTo({
-					url:_urlInfo
+					url: _urlInfo
 				})
 			}
 		}
@@ -53,7 +52,7 @@
 
 <style>
 	@import "./index.css";
-	
+
 	.content {
 		display: flex;
 		flex-direction: column;

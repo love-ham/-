@@ -10,7 +10,7 @@
             "path" : "pages/repair/repair",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "维修工单",
+                "navigationBarTitleText": "工单列表",
                 "enablePullDownRefresh": false
             }
             
@@ -20,6 +20,15 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "巡检打卡",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/repairDetail/repairDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "工单详情",
                 "enablePullDownRefresh": false
             }
             
