@@ -33,6 +33,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/excuteInspection/excuteInspection",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "执行巡检",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
