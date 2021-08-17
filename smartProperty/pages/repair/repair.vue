@@ -44,6 +44,7 @@
 		data() {
 			return {
 				repairOrders: [{
+					"repairId": '00001',
 					"repairObjName": "test",
 					"repairTypeName": "type",
 					"repairName": "测试",
@@ -60,7 +61,7 @@
 			// 跳转至工单详情
 			_toRepairDetail(item) {
 				uni.navigateTo({
-					url: '/pages/repairDetail/repairDetail?repairId'
+					url: "/pages/repairDetail/repairDetail?repairId=" + item.repairId,
 				})
 			},
 			// {{TODO 抢单功能}}
