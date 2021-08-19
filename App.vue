@@ -15,8 +15,8 @@
 <style>
 	/*每个页面公共css */
 	@import "./wxcomponents/vant/dist/common/index.wxss";
-	@import "colorui/main.css";
-	@import "colorui/icon.css";
+	@import "common/main.css";
+	@import "common/icon.css";
 	.van-cell__title, .van-cell__value {
 		white-space: nowrap !important;
 		text-overflow: ellipsis !important;

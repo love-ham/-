@@ -2,20 +2,20 @@
 	// 主包配置
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/tz/index/index",
+			"path": "pages/smartStreet/index/index",
 			"style": {
 				"navigationBarTitleText": "智慧园区小程序",
 				"navigationStyle":"custom"
 			}
 		},
 		{
-			"path": "pages/tz/mailList/mailList",
+			"path": "pages/smartStreet/mailList/mailList",
 			"style": {
 				"navigationBarTitleText": "通讯录"
 			}
 		},
 		{
-			"path": "pages/tz/my/my",
+			"path": "pages/smartStreet/my/my",
 			"style": {
 				"navigationBarTitleText": "个人中心"
 			}
@@ -24,7 +24,7 @@
 	],
 	// 分包配置
 	"subPackages":[{
-		"root": "page", // 当前包的根目录文件
+		"root": "page/smartrtStreet_page", // 当前包的根目录文件
 		"pages":[
 			{  // 当前包的页面配置
 				"path": "equipmentInspection/equipmentInspection/equipmentRepairService",
@@ -74,33 +74,33 @@
 	}],
 	// 预加载配置
 	"preloadRule": {
-		"page/equipmentInspection/equipmentInspection/equipmentRepairService": {// 分包中的主目录
+		"page/smartrtStreet_page/equipmentInspection/equipmentInspection/equipmentRepairService": {// 分包中的主目录
 			"network": "all",// 默认all，即适用所有网络
-			"packages": ["page"]// 进入页面后预下载分包的 root 或 name。__APP__ 表示主包。
+			"packages": ["page/smartrtStreet_page"]// 进入页面后预下载分包的 root 或 name。__APP__ 表示主包。
 		},
-		"page/login/accountNumber/accountNumber": {// 分包中的主目录
+		"page/smartrtStreet_page/login/accountNumber/accountNumber": {// 分包中的主目录
 			"network": "all",// 默认all，即适用所有网络
-			"packages": ["page"]// 进入packagePages/index/index后，加载整个项目
+			"packages": ["page/smartrtStreet_page"]// 进入packagePages/index/index后，加载整个项目
 		},
-		"page/publicFeedback/publicFeedback/publicFeedback": {// 分包中的主目录
+		"page/smartrtStreet_page/publicFeedback/publicFeedback/publicFeedback": {// 分包中的主目录
 			"network": "all",// 默认all，即适用所有网络
-			"packages": ["page"]// 进入packagePages/index/index后，加载整个项目
+			"packages": ["page/smartrtStreet_page"]// 进入packagePages/index/index后，加载整个项目
 		},
-		"page/employmentInformation/employmentInformation/employmentInformation": {// 分包中的主目录
+		"page/smartrtStreet_page/employmentInformation/employmentInformation/employmentInformation": {// 分包中的主目录
 			"network": "all",// 默认all，即适用所有网络
-			"packages": ["page"]// 进入packagePages/index/index后，加载整个项目
+			"packages": ["page/smartrtStreet_page"]// 进入packagePages/index/index后，加载整个项目
 		},
-		"page/notice/notice/noticeList": {// 公告列表
+		"page/smartrtStreet_page/notice/notice/noticeList": {// 公告列表
 			"network": "all",// 默认all，即适用所有网络
-			"packages": ["page"]// 进入packagePages/index/index后，加载整个项目
+			"packages": ["page/smartrtStreet_page"]// 进入packagePages/index/index后，加载整个项目
 		},
-		"page/notice/notice/noticeDetail": {// 公告详情
+		"page/smartrtStreet_page/notice/notice/noticeDetail": {// 公告详情
 			"network": "all",// 默认all，即适用所有网络
-			"packages": ["page"]// 进入packagePages/index/index后，加载整个项目
+			"packages": ["page/smartrtStreet_page"]// 进入packagePages/index/index后，加载整个项目
 		},
-		"page/pay/pay/payList": {// 缴费列表
+		"page/smartrtStreet_page/pay/pay/payList": {// 缴费列表
 			"network": "all",// 默认all，即适用所有网络
-			"packages": ["page"]// 进入packagePages/index/index后，加载整个项目
+			"packages": ["page/smartrtStreet_page"]// 进入packagePages/index/index后，加载整个项目
 		}
 	},
 	
@@ -135,19 +135,19 @@
 	// 底部导航栏配置
 	"tabBar": {
 		"list": [{
-			"pagePath": "pages/tz/index/index",
+			"pagePath": "pages/smartStreet/index/index",
 			"text": "首页",
 			"iconPath": "static/image/index/indexW@2x.png",
 			"selectedIconPath": "static/image/index/index2@2x.png"
 		},
 		{
-			"pagePath": "pages/tz/mailList/mailList",
+			"pagePath": "pages/smartStreet/mailList/mailList",
 			"text": "通讯录",
 			"iconPath": "static/image/index/通讯未选中@2x.png",
 			"selectedIconPath": "static/image/index/通讯录@2x.png"
 		},
 		{
-			"pagePath": "pages/tz/my/my",
+			"pagePath": "pages/smartStreet/my/my",
 			"text": "我的",
 			"iconPath": "static/image/index/我的未选中@2x.png",
 			"selectedIconPath": "static/image/index/我的@2x.png"

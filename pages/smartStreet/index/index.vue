@@ -41,7 +41,7 @@
 					小区公告
 				</view>
 				<view class="title-icon" >
-					<image src="../../static/image/index/right@2x.png" mode=""></image>
+					<image src="/static/image/index/right@2x.png" mode=""></image>
 				</view>
 			</view>
 			<view class="list">
@@ -67,27 +67,27 @@
 					{
 						text: '设备维修',
 						img: "/static/image/index/wxdb@2x.png",
-						url: '../../page/equipmentInspection/equipmentInspection/equipmentRepairService'
+						url: '/page/smartrtStreet_page/equipmentInspection/equipmentInspection/equipmentRepairService'
 					},
 					{
 						text: '民意反馈',
 						img: "/static/image/index/wxdb@2x.png",
-						url: "../../page/publicFeedback/publicFeedback/publicFeedback"
+						url: "/page/smartrtStreet_page/publicFeedback/publicFeedback/publicFeedback"
 					},
 					{
 						text: '就业信息',
 						img: "/static/image/index/wxdb@2x.png",
-						url: "../../page/employmentInformation/employmentInformation/employmentInformation"
+						url: "/page/smartrtStreet_page/employmentInformation/employmentInformation/employmentInformation"
 					},
 					{
 						text: '通知公告',
 						img: "/static/image/index/wxdb@2x.png",
-						url: "../../page/notice/notice/noticeList"
+						url: "/page/smartrtStreet_page/notice/notice/noticeList"
 					},
 					{
 						text: '缴费',
 						img: "/static/image/index/wxdb@2x.png",
-						url: "../../page/pay/pay/payList"
+						url: "/page/smartrtStreet_page/pay/pay/payList"
 					},
 					{
 						text: '文字6',
